@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy Analyzer</title>
+    <link rel="stylesheet" href="../styles/popup.css">
+</head>
+
+<body>
+    <main>
+        <h1>Privacy Policy Analyzer</h1>
+
+        <div id="progress-area" class="center">
+            <div id="spinner"></div>
+            <p id="status">Analyzing privacy policy...</p>
+        </div>
+
+        <section id="analysis">
+
+            <div id="link-status" class="center">
+                <a href="" target="_blank" id="privacy-url">Loading Privacy Policy Url</a>
+            </div>
+
+            <div class="tabs center">
+                <button id="local-model-tab" class="tab-button active" data-model="local-model">Local Model</button>
+                <button id="chat-gpt-tab" class="tab-button" data-model="chat-gpt">ChatGPT</button>
+            </div>
+
+            <div id="local-model-content" class="tab-content active">
+            </div>
+
+            <div id="chat-gpt-content" class="tab-content" class="center">
+                <input type="password" id="api-key" placeholder="Enter your ChatGPT API key" class="input">
+            </div>
+
+            <button type="button" id="start-analysis" disabled>Analyze Privacy Policy</button>
+        </section>
+
+        <section id="result-area" class="center">
+            <h2>Analysis Results</h2>
+            <div id="result-content"></div>
+        </section>
+
+    </main>
+    <script type="module" src="../scripts/popup.ts"></script>
+</body>
+
+</html>
