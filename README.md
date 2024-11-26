@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The **AI Privacy Policy Analyzer** is a Chrome extension designed to help users understand and critique the privacy policies of websites they visit. It uses advanced AI models, including OpenAI's GPT-4 and a local MLC-based AI model, to generate accessible, user-friendly summaries and critiques of privacy policies. This extension empowers users to make informed decisions about their data privacy by identifying vague terms, potential risks, and policy shortcomings.
+The **AI Privacy Policy Analyzer** is a Chrome extension designed to help users understand and critique the privacy policies of websites they visit. It uses advanced AI models, including OpenAI's GPT-3.5-turbo and a local MLC-based AI model, to generate accessible, user-friendly summaries and critiques of privacy policies. This extension empowers users to make informed decisions about their data privacy by identifying vague terms, potential risks, and policy shortcomings.
 
 By leveraging AI-driven language models, the extension ensures that complex legal and technical jargon is translated into clear, concise points. It provides a dual-mode analysis: a local AI model for privacy-conscious users and a cloud-based OpenAI model for higher linguistic sophistication.
 
@@ -80,7 +80,7 @@ We focused on usability and interactivity in the popup interface. Feedback guide
 
 Example:
 - Local models excel in maintaining privacy.
-- GPT-4, used via OpenAI, provides more detailed and nuanced critiques, especially for complex legal documents.
+- GPT-3.5-turbo, used via OpenAI, provides more detailed and nuanced critiques, especially for complex legal documents.
 
 ---
 
@@ -115,7 +115,7 @@ This local-first design is ideal for privacy-sensitive applications where users 
 
 The AI Privacy Policy Analyzer extension is a powerful tool for understanding and critiquing privacy policies. However, it has some limitations and areas for future improvement:
 
-- **Local Model Speed**: The local AI model may not match the linguistic sophistication of cloud-based models like GPT-4. Future updates could include more advanced local models.
+- **Local Model Speed**: The local AI model may not match the linguistic sophistication of cloud-based models like GPT-3.5-turbo. Future updates could include more advanced local models.
 - **Privacy Policy Detection**: The current regex-based URL detection may not cover all websites. Enhancements could include machine learning-based URL detection.
 - **Dynamic Page Analysis**: The extension currently analyzes static privacy policy pages. Future versions could support dynamic page analysis for websites with JavaScript-based content.
 - **User Feedback**: Incorporating user feedback mechanisms could help improve the extension's accuracy and usability.
