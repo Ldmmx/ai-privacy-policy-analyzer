@@ -86,7 +86,7 @@ const analyzeLocal = async () => {
 const analyzeChat = async () => {
     if (!openAiClient) throw new Error('OpenAI client not initialized');
     const stream = await openAiClient.chat.completions.create({
-        model: 'gpt-4',
+        model: 'gpt-3.5-turbo',
         messages: [{ role: 'user', content: buildPrompt(privacyPolicy) }],
         stream: true,
     });
